@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">hiii</p>
+    <button onclick="fun1()">Increase</button>
+    <button onclick="fun2()">decrease</button>
+    <button onclick="fun3()">stop</button>
+    <script>
+        font=15
+        function fun(font){
+            p1.style.fontSize=font+"px"
+            p1.style.color="blue"
+        }
+        function fun1(){
+            setInterval(function()
+        {
+            if(font<=50)
+        {
+            fun(font++) 
+        }
+        },50
+        )
+        }
+
+        font1=50
+        function fun(font){
+            p1.style.fontSize=font+"px"
+            p1.style.color="blue"
+        }
+        function fun2(){
+            setInterval(function()
+        {
+            if(font1>=15)
+        {
+            fun(font1--) 
+        }
+        },50
+        )
+        }
+
+        function stop(){
+            clearInterval(test)
+        } 
+        function fun3(){
+            test=setInterval(()=>{
+                if(font<100)
+            {
+                fun(++font)
+            }
+            },100)
+        }
+        </script>
+</body>
+</html>

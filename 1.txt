@@ -1,0 +1,3 @@
+Js built-in funtion
+json.parse()=Json string-->Js object
+Json.stringify()=Js object-->Json string

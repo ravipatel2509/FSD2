@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const sub = {
+            "FSD": [{
+                // index 0
+                "Topic": "HTML",
+                "course": "Beginner",
+                "content": ["tags", "table", "form"],
+            }, { //index 1
+                "Topic": "HTML-1",
+                "course": "Beginner-1",
+                "content": ["tags-1", "table", "form"],
+
+            }]
+        }
+        document.write("//using for in loop")
+        for (x in sub.FSD) {
+            for (y in sub.FSD[x]) {
+
+                document.write(sub.FSD[x][y] + "<br>")
+                document.write("<br>")
+                document.write("----" + x + " " + y + "" + sub.FSD[x][y] + "<br>")
+            }
+        }
+        //using for..of loop
+        for (x1 of sub.FSD) {
+            document.write("--------------------" + x1 + '-----------' + x1.Topic + " <br> ");
+            document.write(x1.course + "<br>");
+            document.write(x1.content + "<br>");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">hiii</p>
+    <button onclick="fun1()">Increase</button>
+    <script>
+        font=50
+        function fun(font){
+            p1.style.fontSize=font+"px"
+            p1.style.color="blue"
+        }
+        function fun1(){
+            setInterval(function()
+        {
+            if(font>=15)
+        {
+            fun(font--) 
+        }
+        },50
+        )
+        }
+    </script>
+</body>
+</html>

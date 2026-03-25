@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function call() {
+            obj = JSON.parse('{"name":"test","age":18,"city":"ahmedbad","DOB":"1990-08-24"}')
+            obj = new Date(obj.DOB)
+            document.getElementById("demo").innerHTML = obj;
+
+        }
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button onclick="call()">
+        Click me 
+    </button></body>
+
+</html>
